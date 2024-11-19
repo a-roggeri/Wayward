@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Ricerca Film/Serie TV</h1>
+    <form action="/results" method="POST">
+        <input type="text" name="query" placeholder="Cerca un film o una serie" required>
+        <label>
+            <input type="radio" name="type" value="movie" checked> Film
+        </label>
+        <label>
+            <input type="radio" name="type" value="series"> Serie TV
+        </label>
+        <select name="language">
+            <option value="it">Italiano</option>
+            <option value="en">Inglese</option>
+            <option value="fr">Francese</option>
+            <option value="es">Spagnolo</option>
+            <option value="de">Tedesco</option>
+        </select>
+        <button type="submit">Cerca</button>
+    </form>
+</body>
+</html>

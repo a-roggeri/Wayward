@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1>Risultati</h1>
+    <ul>
+        <% results.forEach(item => { %>
+            <li>
+                <a href="/details/<%= item.id %>"><%= item.title %></a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
